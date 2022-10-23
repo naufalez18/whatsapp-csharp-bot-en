@@ -40,7 +40,7 @@ namespace WABot.Controllers
                 {
                     case "Biller":
                         "Update database function Here"
-                        return await api.SendMessage(message.ChatId, $"Your ID: {message.ChatId}");
+                        return await api.SendMessage(message.DisBiller, $"{message.BillerCode} Berhasil Disble");
                     case "file":
                         var texts = message.Body.Split();
                         if (texts.Length > 1)
