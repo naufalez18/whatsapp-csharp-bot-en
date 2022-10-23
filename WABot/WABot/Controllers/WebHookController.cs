@@ -38,7 +38,8 @@ namespace WABot.Controllers
 
                 switch (message.Body.Split()[0].ToLower())
                 {
-                    case "chatid":
+                    case "Biller":
+                        "Update database function Here"
                         return await api.SendMessage(message.ChatId, $"Your ID: {message.ChatId}");
                     case "file":
                         var texts = message.Body.Split();
